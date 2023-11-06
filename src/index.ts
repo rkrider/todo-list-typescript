@@ -12,7 +12,7 @@ const form = document.getElementById('new-task-form') as HTMLFormElement | null;
 const input = document.querySelector<HTMLInputElement>('#new-task-title');
 
 const tasks: Task[] = loadTasks();
-tasks.forEach(addListItem)
+tasks.forEach(addListItem);
 
 form?.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -56,8 +56,8 @@ const saveTask = () => {
   localStorage.setItem('TASKS', JSON.stringify(tasks));
 };
 
-function loadTasks (): Task[] {
+function loadTasks(): Task[] {
   const taskJSON = localStorage.getItem('TASKS');
   if (taskJSON == null) return [];
   return JSON.parse(taskJSON);
-};
+}

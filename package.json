@@ -1,9 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
-    "format": "prettier --write \"src/**/*.{ts,js}\"",
-    "lint": "prettier --check \"src/**/*.{ts,js}\""
+    "build": "snowpack build"
   },
   "dependencies": {
     "canvas-confetti": "^1.2.0",
